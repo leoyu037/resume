@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+  <head>
+
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'>
+
+  <title>Leo Yu</title>
+
+  <style>
+  body {
+  background: #EEEEEE;
+  font: 12px "Times New Roman", Times, sans-serif;
+  line-height: 1.4;
+  margin: 40px 0;
+}
+em {
+  color: #999;
+}
+p {
+  line-height: 1.4;
+}
+ul {
+  margin-bottom: 0;
+}
+li {
+  margin-bottom: 4px;
+  color: #272727;
+}
+a {
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+  font-size: 10px;
+}
+
+#resume {
+  margin: 0 auto;
+  max-width: 660px;
+  padding: 50px 60px 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px #aaa;
+  -webkit-box-shadow: 2px 2px 4px #aaa;
+}
+
+.name {
+  font-weight: bold;
+}
+
+#nameBlock, #basicsBlock {
+  display: inline-block;
+}
+#nameBlock { width: 20%; }
+#basicsBlock { width: 79%; text-align: right; }
+
+.company {
+  font-style: italic;
+}
+.company::after {
+  content: '|';
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+}
+
+.coursesList {
+  width: 28%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.largeFont {
+  font-size: 20px;
+}
+
+.smallFont {
+  font-size: 12px;
+}
+
+.sectionBlock {
+  display: flex;
+  width: 100%;
+}
+
+.sectionName {
+  width: 15%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.sectionContent {
+  width: 83%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.sectionContent ul {
+  padding-left: 20px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  list-style-type: circle;
+}
+
+.sectionContent .title {
+  font-weight: bold;
+  font-family: Georgia;
+}
+
+.date {
+  float: right;
+  width: 124px;
+  text-align: left;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+.date-start { width: 40%; }
+.date-end { width: 40%; }
+.date-sep { width: 20%; text-align: center; }
+
+
+
+.sectionContent .separator {
+  height: 9px;
+}
+
+.sectionLine {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #CFCFCF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.summary {
+  margin-top: 6px;
+}
+
+.skillBlock {
+  margin-bottom: 4px;
+}
+
+.jobBlock {
+  page-break-inside: avoid;
+}
+
+.contactBlock {
+  font-family: Verdana, sans-serif;
+  font-size: 10px;
+}
+
+.technologies {
+  font-family: verdana, sans-serif;
+  font-size: 10px;
+  color: #8e8e8e;
+  line-height: 1.7em;
+
+}
+
+#seo {
+  font-size: 1px;
+  color: white;
+  pointer-events: none;
+  opacity: 0;
+  margin: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 0;
+  left: 0;
+  /*overflow: none;*/
+}
+
+/* Media Queries */
+@media only screen and (max-width: 40em) {
+  body {
+    margin: 0;
+    font-size: 14px;
+  }
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0.5em 1em;
+    border: none;
+  }
+  .sectionContent {
+    width: 100%;
+  }
+  .sectionContent .date {
+    padding-right: 2em;
+  }
+  .sectionName {
+    width: auto;
+  }
+  .largeFont {
+    font-size: 20px;
+  }
+  .smallFont {
+    font-size: 14px;
+  }
+}
+
+@media print {
+  #resume {
+    margin: 0 auto;
+    max-width: 780px;
+    padding: 0px 0px;
+    border: 0px;
+    background: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+
+  a {
+    color: black;
+  }
+}
+
+  </style>
+
+  </head>
+  <body>
+
+  <div id='resume'>
+  <div id='nameBlock' class='largeFont'>
+    <span class='name'>
+      Leo Yu
+    </span>
+  </div>
+  <div id='basicsBlock' class='smallFont'>
+    <div class='contactBlock'>
+      <span class='email'><a href="mailto:leoyu037@gmail.com">leoyu037@gmail.com</a></span>
+      <span class='divider'>|</span>
+      <span class='address'>
+        New York, NY, US
+      </span>
+      <span class='divider'>|</span>
+      <span class='url'>
+        <a href='https://github.com/leoyu037'>github.com/leoyu037</a>
+      </span>
+      <span class='divider'>|</span>
+      <span class='url'>
+        <a href='http://www.linkedin.com/in/leoyu037'>linkedin.com/in/leoyu037</a>
+      </span>
+    </div>
+    <!-- <div id='profilesBlock'>
+    </div> -->
+  </div>
+  <div class='sectionLine'></div>
+
+
+  <div id='workBlock' class="sectionBlock">
+    <div class='sectionName'>
+      <span>EXPERIENCE</span>
+    </div>
+    <div class='sectionContent'>
+      <div class="jobBlock">
+        <div class='blockHeader'>
+          <span class='title'>
+            <span class="company">Compass /</span> Senior Software Engineer, Tech Infra
+          </span>
+          <div class='date'>
+            <div class="date-start">Mar 2019</div>
+            <div class="date-sep"> &mdash; </div>
+            <div class="date-end">Present</div>
+          </div>
+        </div>
+        <div><a href='https://www.compass.com'>compass.com</a></div>
+        <div class="technologies">Python, NodeJS, Java, Github, AWS, Docker, Docker Compose, Kubernetes, Datadog, Pagerduty, Jenkins, CircleCI, Artifactory, Npm Enterprise</div>
+        <!-- <div class="technologies">Python, Node, AWS, Docker, Docker Compose, Kubernetes, Datadog, Pagerduty, Jenkins, CircleCI, Artifactory</div> -->
+
+        <ul class='highlights'>
+          <li>Served as tech lead and program manager for the rollout of Datadog's Custom Metrics, APM, and Logs to 150+ services across 4 languages and 40 teams</li>
+          <li>Led a project team of 4 engineers for the migration of 400+ internal JS packages and 60+ Node services from NPM Enterprise to Artifactory over 2 months</li>
+          <li>Served as SPOA (single point of accountability) for the org's use of Artifactory as a cross language package repository, managing the evaluation, acquisition, billing, administration/governance, and org-wide rollout</li>
+          <li>Developed and evangelized POC of unit and integration testing workflows for both local development and CI/CD using Docker Compose, increasing the speed, frequency, and reliability of builds</li>
+          <li>Continually designed and implemented projects/enhancements/refactors to the org's Python ecosystem to: speed up iteration, decouple different teams' development cycles, untangle the monorepo, and enable the migration to Python 3</li>
+        </ul>
+      </div>
+      <div class="jobBlock">
+        <div class='blockHeader'>
+          <span class='title'>
+            Software Engineer, DevEx/Tech Infra
+          </span>
+          <span class='date'>
+            <div class="date-start">May 2018</div>
+            <div class="date-sep"> &mdash; </div>
+            <div class="date-end">Mar 2019</div>
+          </span>
+        </div>
+        <ul class='highlights'>
+          <li>Introduced and evangelized Datadog to Compass; integrated APM into all Python and Node services, bringing observability to an entire layer of the stack that had none; initiated and helped close the deal to acquire Datadog as monitoring vendor</li>
+          <li>Started Product & Engineering mentorship program, matching 22 engineers and managers with mentors (including C-level executives) in the first cohort. Matched QA engineers with mentors that helped them transition into software development roles</li>
+          <li>Wrote interactive tutorial that teaches Docker best practices, reducing engineer onboarding time to Docker from weeks/months to <2 hours</li>
+          <li>Wrote automated provisioning system for Kubernetes clusters (built on kops), reducing time to spin up a production-ready cluster from days to <1 hour</li>
+          <li>Rewrote Kubernetes deploy system, reducing deploy time 20x and increasing deploy frequency 5x for the org</li>
+          <!-- <li>Responsible for maintaining the Kubernetes clusters and deployments for our NodeJS services</li> -->
+          <!-- <li>Wrote POC to analyze and visualize Python dependency graph as part of an ongoing effort to untangle the monorepo</li> -->
+        </ul>
+        <div class='separator'></div>
+      </div>
+      <div class="jobBlock">
+        <div class='blockHeader'>
+          <span class='title'>
+            <span class="company">JW Player</span> Software Engineer
+          </span>
+          <span class='date'>
+            <div class="date-start">Feb 2016</div>
+            <div class="date-sep"> &mdash; </div>
+            <div class="date-end">Apr 2018</div>
+          </span>
+        </div>
+        <div><a href='https://www.jwplayer.com'>jwplayer.com</a></div>
+        <div class="technologies">Python, Java, Github, AWS, Locust.io, Flask, Swagger/OpenAPI, Celery, MySQL, PostgreSQL, Elasticsearch, Redis, Kafka, Kafka Connect, Docker, Docker Compose, Datadog, PagerDuty, Jenkins, Buildkite</div>
+        <ul class='highlights'>
+          <li>Refactored and virtualized Recommendations stack using Docker; developed workflow for local development and integration testing using Docker Compose that other teams adopted</li>
+          <li>Made major contribution to large scale Recommendations API migration; used log replay tool to ensure that the new stack had 100% feature parity with the old stack</li>
+          <li>Wrote extensible functional test framework for Recommendations stack, getting team members to write tests</li>
+          <li>Benchmarked and performance tuned Recommendations' data pipeline; migrated stack from EC2 to Kubernetes</li>
+          <li>Automated Recommendations team’s build/deployment pipeline, going from ad-hoc monthly deploys to continuous deployments multiple times a week with testing and fast rollbacks</li>
+          <!-- <li>Wrote tool that leverages Locust.io to perform distributed load testing via AWS</li> -->
+          <li>Organized the on call rotation for 20+ engineer across 4 data teams; reorganized Recommendation team’s monitors and runbooks</li>
+          <!-- <li>Helped organize monthly employee art installations and happy hour as part of diversity, inclusion, and company culture initiative</li> -->
+        </ul>
+        <div class='separator'></div>
+      </div>
+      <div class="jobBlock">
+        <div class='blockHeader'>
+          <span class='title'>
+            <span class="company">Dovetail</span> Associate Software Engineer
+          </span>
+          <span class='date'>
+            <div class="date-start">Jun 2014</div>
+            <div class="date-sep"> &mdash; </div>
+            <div class="date-end">Feb 2016</div>
+          </span>
+        </div>
+        <div><a href='https://www.fiserv.com/en/solutions/payments/enterprise-payments-solutions/dovetail-payments-platform.html'>fiserv.com</a> (Acquired in 2017)</div>
+        <div class="technologies">Java, Ant, Maven, Mockito, PowerMock, Jenkins</div>
+        <ul class='highlights'>
+          <li>Helped migrate build tools from Ant to Maven</li>
+          <li>Worked on refactoring core framework from rest of the codebase</li>
+          <!-- <li>Wrote simple shell scripts to automate repetitive development tasks</li> -->
+          <li>Helped develop a framework for testing company's core platform/library in isolation</li>
+          <li>Worked on extending functional test framework to support multi-day payments processing simulations</li>
+          <li>Routinely wrote unit/integration/functional tests for product code and set up Jenkins automation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class='sectionLine'></div>
+
+
+  <!--
+  <div id='publications'>
+    <div class='sectionName'>
+      <span>PROJECTS</span>
+    </div>
+    <div class='sectionContent'>
+      <div class='blockHeader'>
+        <span class='title'>
+          <span class="company">Locust.io</span> Open Source Maintainer
+        </span>
+        <span class='date'>
+          <div class="date-start">Mar 2016</div>
+          <div class="date-sep"> &mdash; </div>
+          <div class="date-end">May 2018</div>
+        </span>
+      </div>
+      <div class='website'>
+        <a href='http://locust.io'>locust.io</a>
+      </div>
+      <div>Served on the core maintainer team of the Locust distributed load testing framework responsible for code reviews, code quality, fixing defects, test coverage, and cross-platform compatibility.
+      </div>
+
+      <br>
+
+      <div class='blockHeader'>
+        <span class='title'>
+          <span class="company">Chef Iso</span> Owner
+        </span>
+        <span class='date'>
+          <div class="date-start">Dec 2015</div>
+          <div class="date-sep"> &mdash; </div>
+          <div class="date-end">Present</div>
+        </span>
+      </div>
+      <div class='website'>
+        <a href='https://chefiso.com'>chefiso.com</a>
+      </div>
+      <div>Developed, marketed, and maintained the serverless website which serves over 100,000 monthly active users and delivers 90GB of video per month.
+      </div>
+
+    </div>
+  </div>
+  <div class='sectionLine'></div>
+  -->
+
+
+  <div id='education' class="sectionBlock">
+    <div class='sectionName'>
+      <span>EDUCATION</span>
+    </div>
+    <div class='sectionContent'>
+      <div class='educationBlock'>
+        <span class='title'>
+          Rutgers University, New Brunswick
+        </span>
+        <span class='date'>
+          <div class="date-start">Sep 2009</div>
+          <div class="date-sep"> &mdash; </div>
+          <div class="date-end">May 2013</div>
+        </span>
+        <div class=''>
+          Bachelor of Science - Physics, Minor in Computer Science
+        </div>
+      </div>
+
+      <div class='separator'></div>
+
+      <div class='educationBlock'>
+        <span class='title'>
+          KTH - Royal Institute of Technology
+        </span>
+        <span class='date'>
+          <div class="date-start">Aug 2012</div>
+          <div class="date-sep"> &mdash; </div>
+          <div class="date-end">Jan 2013</div>
+        </span>
+        <div class=''>
+          Erasmus Program (study abroad), Physics and Computer Science
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class='sectionLine'></div>
+
+  <span id="seo">
+    Python, React, Machine Learning, ML, Sklearn, Scikit Learn, Keras, Numpy, SpaCy, Jupyter, Cassandra, NoSQL, Go, Golang, Storm, Flink, Docker, Kubernetes, Google Cloud, Microsoft Azure, Redis, Memcached, Angular, Tensorflow, MapReduce, Chef, Puppet, SaltStack, Git, ElasticSearch, DynamoDB, Node.js, Distributed Systems, Angular, Linux, DevOps, Configuration Management, CSS, SASS, SCSS, Shell Scripting, Bash Scripting, Vue.js, Express, Apache Spark, MongoDB, RocksDB, IBM Cloud, Watson, Swift, SQL, Pandas, OpenCV, OCR
+  </span>
+
+
+  </body>
+</html>
